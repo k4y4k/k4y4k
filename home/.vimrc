@@ -4,16 +4,35 @@ if empty(glob('~/.vim/autoload/plug.vim'))
       autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
     endif
 
-" Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
-" Declare the list of plugins.
-" Plug 'tpope/vim-sensible'
+" Sensible starting point...
+Plug 'tpope/vim-sensible'
+
+" Syntax things
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
+
 " TODO: json quote hiding not working properly
 Plug 'reedes/vim-colors-pencil'
-" List ends here. Plugins become visible to Vim after this call.
+
+" TODO: highlight trailing spaces
+
+" TODO: airline
+
+" Follow symlinks
+Plug 'moll/vim-bbye' " optional dependency
+Plug 'aymericbeaumet/vim-symlink'
+
+" TODO: "intellisense" / completions
+
+" TODO: set up a Writing Room mode for when I need to smash out a chapter of my
+" Mike Wazowski × The Onceler fanfic
+
+" TODO: ruler at 80 / 120 characters
+
+" TODO: conceal keywords and add in math symbols
+
 call plug#end()
 
 syntax on
