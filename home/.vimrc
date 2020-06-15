@@ -1,8 +1,11 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-      autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-    endif
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+filetype on
+syntax enable
 
 call plug#begin('~/.vim/plugged')
 
@@ -13,7 +16,7 @@ Plug 'tpope/vim-sensible'
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 
-" TODO: json quote hiding not working properly
+" Colour theme
 Plug 'reedes/vim-colors-pencil'
 
 " TODO: highlight trailing spaces
@@ -35,10 +38,12 @@ Plug 'aymericbeaumet/vim-symlink'
 
 call plug#end()
 
-syntax on
 " TODO: failing neovim health checks about tmux and colours and stuff?
 
 " TODO: set up an environment for [R]md files, don't bother w/ others
 
 colorscheme pencil
 set background=dark
+
+" Force JSON to hide quotes
+let g:vim_json_syntax_conceal = 1
