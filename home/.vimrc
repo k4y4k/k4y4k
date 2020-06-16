@@ -41,7 +41,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'vim-airline/vim-airline'
 
 " Follow symlinks
-Plug 'moll/vim-bbye' " optional dependency
+Plug 'moll/vim-bbye'
 Plug 'aymericbeaumet/vim-symlink'
 
 " smooth scrolling
@@ -53,21 +53,36 @@ Plug 'tpope/vim-surround'
 " Prettier!!!
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-" TODO: set up a Writing Room mode for when I need to smash out a chapter of my
-" Mike Wazowski × The Onceler fanfic
-" (for [R]md files, don't bother w/ others)
+" Auto save on every change in normal mode and upon leaving insert mode
+Plug '907th/vim-auto-save'
+
+" UNDĀIN MĖIYRR ================================================================
+" ============= THE WRITING ROOM ===============================================
+
+" TODO: perhaps even LaTeX
+
+" Make vim nice for writing
+Plug 'reedes/vim-pencil', {'for' : ['markdown', 'rmarkdown', 'text']}
+
+" Make vim's spellcheck, thesaurus and dictionary betterer
+Plug 'reedes/vim-lexical', {'for' : ['markdown', 'rmarkdown', 'text']}
+
+" ==============================================================================
 
 " TODO: conceal keywords and add in math symbols
 
-" TODO: YCM installed with Pacman
+" NOTE: YCM installed with Pacman
 
-" TODO: make kayak better at vim section =======================================
+" make kayak better at vim section =============================================
 
 if has('python3') && has('timers')
   Plug 'AlphaMycelium/pathfinder.vim'
 else
   echoerr 'pathfinder.vim is not supported on this Vim installation'
 endif
+
+" Nort h, j, k, l, UP, DOWN, LEFT, RIGHT to make me learn motion movements
+Plug 'takac/vim-hardtime'
 
 " ==============================================================================
 
@@ -82,3 +97,10 @@ let g:vim_json_syntax_conceal = 1
 
 set colorcolumn=80
 set number
+
+" when we load lexical, enable spellcheck by default
+let g:lexical#spell = 1
+
+" use only en_au
+let g:lexical#spelllang = 'en_au'
+
