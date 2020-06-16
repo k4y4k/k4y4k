@@ -50,6 +50,9 @@ Plug 'yuttie/comfortable-motion.vim'
 " easily delete, change and add such surroundings in pairs.
 Plug 'tpope/vim-surround'
 
+" Prettier!!!
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
 " TODO: set up a Writing Room mode for when I need to smash out a chapter of my
 " Mike Wazowski × The Onceler fanfic
 " (for [R]md files, don't bother w/ others)
@@ -78,3 +81,4 @@ set background=dark
 let g:vim_json_syntax_conceal = 1
 
 set colorcolumn=80
+set number
