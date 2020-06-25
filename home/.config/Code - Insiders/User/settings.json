@@ -1,0 +1,130 @@
+{
+  "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.quickSuggestions": {
+          "comments": false,
+          "other": false,
+          "strings": false
+      },
+      "editor.wordWrap": "on"
+  },
+  "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": true,
+  "css.validate": false,
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
+  "editor.cursorStyle": "block",
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "Iosevka, 'Iosevka SS09', 'Fira Code Light', 'Monoid NF'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelScrollSensitivity": 1.66,
+  "editor.parameterHints.cycle": true,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [
+      120,
+      80
+  ],
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.tabCompletion": "onlySnippets",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true,
+  "eslint.packageManager": "yarn",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "onWindowChange",
+  "files.eol": "\n",
+  "files.trimFinalNewlines": true,
+  "git-graph.dialog.deleteBranch.forceDelete": true,
+  "git-graph.dialog.merge.noFastForward": false,
+  "git-graph.fetchAndPrune": true,
+  "git-graph.muteCommitsThatAreNotAncestorsOfHead": true,
+  "git-graph.dialog.rebase.launchInteractiveRebase": true,
+  "git.autofetch": true,
+  "git.autoStash": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "githubPullRequests.remotes": [
+      "github",
+      "origin",
+      "upstream"
+  ],
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "keyboard.dispatch": "keyCode",
+  "less.validate": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.useLocalIp": true,
+  "npm.enableScriptExplorer": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.resolveGlobalModules": true,
+  "prettier.singleQuote": true,
+  "scss.lint.float": "warning",
+  "scss.validate": false,
+  "sync.autoUpload": true,
+  "sync.forceUpload": true,
+  "sync.gist": "3b7ec5e12ad1196165624d4b696eb425",
+  "terminal.external.linuxExec": "termite",
+  "terminal.integrated.rendererType": "dom",
+  "todo-tree.general.tags": [
+      "FIXME",
+      "NOTE",
+      "TODO"
+  ],
+  "todo-tree.highlights.customHighlight": {
+      "NOTE": {
+          "background": "#fff8dc",
+          "icon": "check"
+      },
+      "TODO": {
+          "icon": "check"
+      }
+  },
+  "todo-tree.highlights.defaultHighlight": {
+      "background": "#ffc605",
+      "foreground": "black",
+      "icon": "alert",
+      "iconColour": "orange",
+      "rulerColour": "#ffc605",
+      "type": "tag"
+  },
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "F",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "vsicons.dontShowNewVersionMessage": true,
+  "remote.extensionKind": {
+    "ms-azuretools.vscode-docker": "workspace"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
+}
