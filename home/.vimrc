@@ -12,6 +12,10 @@ call plug#begin('~/.vim/plugged')
 " Sensible starting point...
 Plug 'tpope/vim-sensible'
 
+" Stats and metrics
+Plug 'wakatime/vim-wakatime'
+Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
+
 " Syntax things
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
@@ -103,4 +107,7 @@ let g:lexical#spell = 1
 
 " use only en_au
 let g:lexical#spelllang = 'en_au'
+
+" Code::Stats in the status bar
+let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype', '%{CodeStatsXp()}'])
 
