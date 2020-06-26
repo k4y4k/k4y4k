@@ -111,3 +111,7 @@ let g:lexical#spelllang = 'en_au'
 " Code::Stats in the status bar
 let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype', '%{CodeStatsXp()}'])
 
+" Prettier default config
+let g:prettier#config#tab_width = 2
+let g:prettier#config#use_tabs = 'false'
+let g:prettier#config#print_width = 80
