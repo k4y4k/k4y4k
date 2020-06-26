@@ -33,17 +33,14 @@
   "editor.detectIndentation": false,
   "editor.fontFamily": "Iosevka, 'Iosevka SS09', 'Fira Code Light', 'Monoid NF'",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.minimap.enabled": false,
   "editor.mouseWheelScrollSensitivity": 1.66,
   "editor.parameterHints.cycle": true,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [
-      120,
-      80
-  ],
+  "editor.rulers": [120, 80],
   "editor.suggest.shareSuggestSelections": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "onlySnippets",
@@ -69,12 +66,6 @@
   "git.autoStash": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "git.postCommitCommand": "sync",
-  "githubPullRequests.remotes": [
-      "github",
-      "origin",
-      "upstream"
-  ],
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "keyboard.dispatch": "keyCode",
@@ -93,11 +84,7 @@
   "sync.gist": "3b7ec5e12ad1196165624d4b696eb425",
   "terminal.external.linuxExec": "termite",
   "terminal.integrated.rendererType": "dom",
-  "todo-tree.general.tags": [
-      "FIXME",
-      "NOTE",
-      "TODO"
-  ],
+  "todo-tree.general.tags": ["FIXME", "NOTE", "TODO"],
   "todo-tree.highlights.customHighlight": {
       "NOTE": {
           "background": "#fff8dc",
@@ -123,8 +110,5 @@
   "vsicons.dontShowNewVersionMessage": true,
   "remote.extensionKind": {
     "ms-azuretools.vscode-docker": "workspace"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
   }
 }
