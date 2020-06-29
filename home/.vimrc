@@ -111,7 +111,7 @@ set number
 
 " configure spellchecking
 set spelllang=en_au
-set spellfile=$HOME/en_au.utf-8.add
+set spellfile=$HOME/en.utf-8.add
 
 " when we load lexical, enable spellcheck by default
 let g:lexical#spell = 1
@@ -134,4 +134,5 @@ let g:auto_save = 1
 augroup the_meiyrr
 	autocmd!
 	autocmd FileType markdown,rmarkdown,rmd,text set spell
+	mkspell! ~/en.utf-8.add
 augroup END
