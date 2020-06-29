@@ -66,10 +66,17 @@ Plug '907th/vim-auto-save'
 " TODO: perhaps even LaTeX
 
 " Make vim nice for writing
-Plug 'reedes/vim-pencil', {'for' : ['markdown', 'rmarkdown', 'text']}
+Plug 'reedes/vim-pencil', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
 
 " Make vim's spellcheck, thesaurus and dictionary betterer
-Plug 'reedes/vim-lexical', {'for' : ['markdown', 'rmarkdown', 'text']}
+Plug 'reedes/vim-lexical', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
+
+" (Kirby-like) Goyo~!
+Plug 'junegunn/goyo.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
+
+" And something to help me focus in the all-too-way-too-very-big terminal
+Plug 'junegunn/limelight.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
+
 
 " ==============================================================================
 
