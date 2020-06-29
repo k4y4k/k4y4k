@@ -27,3 +27,4 @@ set PATH (ruby -e 'puts Gem.user_dir')/bin $PATH
 . "$HOME/.homesick/repos/homeshick/homeshick.fish"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick.fish"
 
+set PATH /home/kayak/bin $PATH
