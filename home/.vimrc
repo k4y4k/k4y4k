@@ -109,6 +109,10 @@ let g:vim_json_syntax_conceal = 1
 set colorcolumn=80
 set number
 
+" configure spellchecking
+set spelllang=en_au
+set spellfile=$HOME/en_au.utf-8.add
+
 " when we load lexical, enable spellcheck by default
 let g:lexical#spell = 1
 
@@ -122,3 +126,12 @@ let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype', '%
 let g:prettier#config#tab_width = 2
 let g:prettier#config#use_tabs = 'false'
 let g:prettier#config#print_width = 80
+
+" Turn auto-save on by default
+let g:auto_save = 1
+
+" Configure spellchecking for the Mėiyrr
+augroup the_meiyrr
+	autocmd!
+	autocmd FileType markdown,rmarkdown,rmd,text set spell
+augroup END
