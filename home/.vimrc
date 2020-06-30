@@ -4,6 +4,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+set nocompatible
 filetype on
 syntax enable
 
@@ -60,6 +61,9 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Auto save on every change in normal mode and upon leaving insert mode
 Plug '907th/vim-auto-save'
 
+" A wiki
+Plug 'vimwiki/vimwiki'
+
 " UNDĀIN MĖIYRR ================================================================
 " ============= THE WRITING ROOM ===============================================
 
@@ -77,7 +81,6 @@ Plug 'junegunn/goyo.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
 " And something to help me focus in the all-too-way-too-very-big terminal
 Plug 'junegunn/limelight.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
 
-
 " ==============================================================================
 
 " TODO: conceal keywords and add in math symbols
@@ -91,9 +94,6 @@ if has('python3') && has('timers')
 else
   echoerr 'pathfinder.vim is not supported on this Vim installation'
 endif
-
-" Nort h, j, k, l, UP, DOWN, LEFT, RIGHT to make me learn motion movements
-Plug 'takac/vim-hardtime'
 
 " ==============================================================================
 
@@ -130,9 +130,9 @@ let g:prettier#config#print_width = 80
 " Turn auto-save on by default
 let g:auto_save = 1
 
-" Configure spellchecking for the Mėiyrr
+" Configure the Mėiyrr
 augroup the_meiyrr
-	autocmd!
-	autocmd FileType markdown,rmarkdown,rmd,text set spell
-	mkspell! ~/en.utf-8.add
+  autocmd!
+  autocmd FileType markdown,rmarkdown,rmd,text set spell
+  mkspell! ~/en.utf-8.add
 augroup END
