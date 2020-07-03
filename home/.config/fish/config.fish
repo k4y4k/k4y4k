@@ -11,7 +11,7 @@ set PATH $ANDROID_HOME/platform-tools $PATH
 
 set PATH /home/kayak/.local/bin $PATH
 
-alias yi="yay -Syu --noconfirm"
+alias yi="yay -Syu --noconfirm --sudoloop"
 alias work-here="subl . && smerge ."
 
 function zeal-docs-fix
