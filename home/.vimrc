@@ -8,6 +8,8 @@ set nocompatible
 filetype on
 syntax enable
 
+" VIM-PLUG =====================================================================
+
 call plug#begin('~/.vim/plugged')
 
 " Sensible starting point...
@@ -29,6 +31,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug '/usr/bin/fzf'
 
 " Colour theme
 Plug 'reedes/vim-colors-pencil'
@@ -81,24 +84,30 @@ Plug 'junegunn/goyo.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
 " And something to help me focus in the all-too-way-too-very-big terminal
 Plug 'junegunn/limelight.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
 
-" ==============================================================================
+" ============================================================ END UNDĀIN MĖIYRR
 
 " TODO: conceal keywords and add in math symbols
 
 " NOTE: YCM installed with Pacman
 
-" make kayak better at vim section =============================================
-
+" Pathfinder (alternatively: want loop errors every 20 seconds?)
 if has('python3') && has('timers')
   Plug 'AlphaMycelium/pathfinder.vim'
 else
   echoerr 'pathfinder.vim is not supported on this Vim installation'
 endif
 
-" ==============================================================================
-
 call plug#end()
 
+" ================================================================= END VIM-PLUG
+
+" KAYAK ZONE ===================================================================
+" ========== INDIVIDUAL SETTINGS ===============================================
+
+" set leader to Space
+let mapleader = " "
+
+" configure colour scheme
 colorscheme pencil
 let g:airline_theme = 'pencil'
 set background=dark
@@ -106,12 +115,17 @@ set background=dark
 " Force JSON to hide quotes
 let g:vim_json_syntax_conceal = 1
 
+" Show ruler at 80 columns
 set colorcolumn=80
+
+" Show line numbers
 set number
 
 " configure spellchecking
 set spelllang=en_au
 set spellfile=$HOME/en.utf-8.add
+
+" TODO: thesaurus?
 
 " when we load lexical, enable spellcheck by default
 let g:lexical#spell = 1
@@ -134,5 +148,50 @@ let g:auto_save = 1
 augroup the_meiyrr
   autocmd!
   autocmd FileType markdown,rmarkdown,rmd,text set spell
+  autocmd FileType markdown,rmarkdown,rmd,text Goyo
+  autocmd FileType markdown,rmarkdown,rmd,text Limelight
   mkspell! ~/en.utf-8.add
 augroup END
+
+" turn on that sweet line bg
+set cursorline
+set cursorcolumn
+
+" Toggle Goyo with ctrl+G (remember, Goyo's only loaded in the Mėiyrr)
+nnoremap <C-g> :Goyo<CR>
+
+" Similarly, toggle Limelight with <leader>+l / <leader>+L
+nnoremap <leader>l :Limelight<CR>
+nnoremap <leader>L :Limelight!<CR>
+
+" Configuration for vim-markdown
+let g:vim_markdown_conceal = 2
+let g:vim_markdown_conceal_code_blocks = 0
+let g:vim_markdown_math = 1
+let g:vim_markdown_toml_frontmatter = 1
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_strikethrough = 1
+let g:vim_markdown_autowrite = 1
+let g:vim_markdown_edit_url_in = 'tab'
+let g:vim_markdown_follow_anchor = 1
+
+" Have lines wrap instead of continue off-screen
+set linebreak
+
+" Converts tabs to spaces
+set expandtab
+
+" Use two spaces instead of tabs
+set tabstop=2
+
+" The same but for indents
+set shiftwidth=2
+
+" Keep cursor in approximately the middle of the screen (I usually use a
+" horizontal display)
+set scrolloff=50
+
+" Wrap searches around the end of the file
+set wrapscan
+
+" END KAYAK ZONE ===============================================================
