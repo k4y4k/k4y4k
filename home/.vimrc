@@ -104,9 +104,6 @@ call plug#end()
 " KAYAK ZONE ===================================================================
 " ========== INDIVIDUAL SETTINGS ===============================================
 
-" set leader to Space
-let mapleader = " "
-
 " configure colour scheme
 colorscheme pencil
 let g:airline_theme = 'pencil'
@@ -144,12 +141,13 @@ let g:prettier#config#print_width = 80
 " Turn auto-save on by default
 let g:auto_save = 1
 
+" Silence, autosave
+let g:auto_save_silent = 1
+
 " Configure the Mėiyrr
 augroup the_meiyrr
   autocmd!
   autocmd FileType markdown,rmarkdown,rmd,text set spell
-  autocmd FileType markdown,rmarkdown,rmd,text Goyo
-  autocmd FileType markdown,rmarkdown,rmd,text Limelight
   mkspell! ~/en.utf-8.add
 augroup END
 
@@ -193,5 +191,8 @@ set scrolloff=50
 
 " Wrap searches around the end of the file
 set wrapscan
+
+" Quit NERDtree after opening a file
+let NERDTreeQuitOnOpen=1
 
 " END KAYAK ZONE ===============================================================
