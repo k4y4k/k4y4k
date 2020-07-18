@@ -1,0 +1,15 @@
+[general]
+  targets = github
+  log.level = DEBUG
+
+[github]
+  service = github
+  github.default_priority = H
+  github.add_tags = github
+  github.username = k4y4k
+  github.login = k4y4k
+
+[notifications]
+  notifications = True
+  backend = gobject
+  only_on_new_tasks = False
