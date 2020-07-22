@@ -36,9 +36,6 @@ Plug '/usr/bin/fzf'
 " Colour theme
 Plug 'reedes/vim-colors-pencil'
 
-" File tree
-Plug 'preservim/nerdtree'
-
 " Better commenting
 Plug 'preservim/nerdcommenter'
 
@@ -191,8 +188,5 @@ set scrolloff=50
 
 " Wrap searches around the end of the file
 set wrapscan
-
-" Quit NERDtree after opening a file
-let NERDTreeQuitOnOpen=1
 
 " END KAYAK ZONE ===============================================================
