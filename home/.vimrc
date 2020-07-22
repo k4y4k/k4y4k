@@ -64,6 +64,9 @@ Plug '907th/vim-auto-save'
 " A wiki
 Plug 'vimwiki/vimwiki'
 
+" organisation uwu
+Plug 'blindFS/vim-taskwarrior'
+
 " UNDĀIN MĖIYRR ================================================================
 " ============= THE WRITING ROOM ===============================================
 
