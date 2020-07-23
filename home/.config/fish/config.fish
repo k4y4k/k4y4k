@@ -22,8 +22,6 @@ end
 
 thefuck --alias | source
 
-set PATH (ruby -e 'puts Gem.user_dir')/bin $PATH
-
 . "$HOME/.homesick/repos/homeshick/homeshick.fish"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick.fish"
 
@@ -32,4 +30,7 @@ set PATH /home/kayak/bin $PATH
 function git --wraps hub --description 'Alias for hub, which wraps git to provide extra functionality with GitHub.'
   hub $argv
 end
+
+source /usr/share/chruby/chruby.fish
+source /usr/share/chruby/auto.fish
 
