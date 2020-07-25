@@ -67,6 +67,12 @@ Plug 'vimwiki/vimwiki'
 " organisation uwu
 Plug 'blindFS/vim-taskwarrior'
 
+" Commenting superpowers
+Plug 'preservim/nerdcommenter'
+
+" Close brackets
+Plug 'Raimondi/delimitMate'
+
 " UNDĀIN MĖIYRR ================================================================
 " ============= THE WRITING ROOM ===============================================
 
@@ -191,5 +197,8 @@ set scrolloff=50
 
 " Wrap searches around the end of the file
 set wrapscan
+
+" comment like // ... rather than //...
+let NERDSpaceDelims=1
 
 " END KAYAK ZONE ===============================================================
