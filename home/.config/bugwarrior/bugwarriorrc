@@ -1,6 +1,6 @@
 [general]
   targets = github
-  log.level = DEBUG
+  log.level = INFO
 
 [github]
   service = github
