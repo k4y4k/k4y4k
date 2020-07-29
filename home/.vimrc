@@ -201,4 +201,12 @@ set wrapscan
 " comment like // ... rather than //...
 let NERDSpaceDelims=1
 
+" enable hybrid line numbers in normal mode because I can't count, but keep
+" the absolute one in insert mode
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 " END KAYAK ZONE ===============================================================
