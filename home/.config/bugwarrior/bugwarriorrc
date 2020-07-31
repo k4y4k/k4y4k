@@ -4,7 +4,7 @@
 
 [github]
   service = github
-  github.default_priority = H
+  github.default_priority = M
   github.add_tags = github
   github.username = k4y4k
   github.login = k4y4k
