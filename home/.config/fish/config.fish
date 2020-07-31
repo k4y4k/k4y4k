@@ -34,3 +34,6 @@ end
 source /usr/share/chruby/chruby.fish
 source /usr/share/chruby/auto.fish
 
+alias lss="exa -a --grid --long"
+
+homeshick --quiet refresh 2
