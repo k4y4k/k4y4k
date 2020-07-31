@@ -32,7 +32,8 @@ exec --no-startup-id nm-applet
 
 exec --no-startup-id  setxkbmap us -variant colemak -option compose:rctrl
 exec --no-startup-id /home/kayak/.screenlayout/screens.sh
-
+exec --no-startup-id megasync
+exec --no-startup-id redshift-gtk
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -186,3 +187,9 @@ bar {
 
 
 bindsym $mod+comma exec splatmoji type
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
