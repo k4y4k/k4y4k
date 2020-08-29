@@ -100,8 +100,6 @@ Plug 'junegunn/limelight.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']
 " Pathfinder (alternatively: want loop errors every 20 seconds?)
 if has('python3') && has('timers')
   Plug 'AlphaMycelium/pathfinder.vim'
-else
-  echoerr 'pathfinder.vim is not supported on this Vim installation'
 endif
 
 call plug#end()
@@ -155,8 +153,10 @@ let g:auto_save_silent = 1
 augroup the_meiyrr
   autocmd!
   autocmd FileType markdown,rmarkdown,rmd,text set spell
-  mkspell! ~/en.utf-8.add
 augroup END
+
+" Rebuild spellfile on command only
+nnoremap <leader>Z :mkspell! ~/en.utf-8.add<CR>
 
 " turn on that sweet line bg
 set cursorline
