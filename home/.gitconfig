@@ -11,6 +11,6 @@
 [credential]
 	helper = cache
 [pull]
-	rebase = true
+	rebase = false
 [core]
 	editor = vim
