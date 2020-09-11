@@ -34,6 +34,9 @@ exec --no-startup-id  setxkbmap us -variant colemak -option compose:rctrl
 exec --no-startup-id /home/kayak/.screenlayout/screens.sh
 exec --no-startup-id megasync
 exec --no-startup-id redshift-gtk
+# set background image
+exec --no-startup-id feh --no-xinerama --bg-center /home/kayak/wall.jpg
+
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
