@@ -75,6 +75,9 @@ Plug 'Raimondi/delimitMate'
 " styled-components
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
+" Godot 🕺
+Plug 'habamax/vim-godot'
+
 " ============= THE WRITING ROOM ===============================================
 
 " TODO: perhaps even LaTeX
@@ -212,5 +215,18 @@ augroup END
 
 " Emmet
 let g:user_emmet_leader_key=','
+
+" setup and keyboard shortcuts for Godot
+func! GodotSettings() abort
+  setlocal foldmethod=expr
+  setlocal tabstop=4
+  nnoremap <buffer> <F4> :GodotRunLast<CR>
+  nnoremap <buffer> <F5> :GodotRun<CR>
+  nnoremap <buffer> <F6> :GodotRunCurrent<CR>
+  nnoremap <buffer> <F7> :GodotRunFZF<CR>
+endfunc
+augroup godot | au!
+  au FileType gdscript call GodotSettings()
+augroup end
 
 " END KAYAK ZONE ===============================================================
