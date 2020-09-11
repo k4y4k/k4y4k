@@ -229,4 +229,10 @@ augroup godot | au!
   au FileType gdscript call GodotSettings()
 augroup end
 
+" use folding
+set foldmethod=syntax
+set foldlevelstart=1
+
+let javaScript_fold=1
+
 " END KAYAK ZONE ===============================================================
