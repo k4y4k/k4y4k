@@ -213,9 +213,6 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-" Emmet
-let g:user_emmet_leader_key=','
-
 " setup and keyboard shortcuts for Godot
 func! GodotSettings() abort
   setlocal foldmethod=expr
