@@ -23,6 +23,10 @@ Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 
+" completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Emmet
 Plug 'mattn/emmet-vim'
 
 " Multiple cursors
