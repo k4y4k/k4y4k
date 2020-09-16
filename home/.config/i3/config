@@ -37,6 +37,9 @@ exec --no-startup-id redshift-gtk
 # set background image
 exec --no-startup-id feh --no-xinerama --bg-center /home/kayak/wall.jpg
 
+# get this party started
+exec --no-startup-id discord
+exec --no-startup-id spotify
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
