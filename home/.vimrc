@@ -101,8 +101,6 @@ Plug 'junegunn/limelight.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']
 
 " TODO: conceal keywords and add in math symbols
 
-" NOTE: YCM installed with Pacman
-
 " Pathfinder (alternatively: want loop errors every 20 seconds?)
 if has('python3') && has('timers') && !has("nvim")
   Plug 'AlphaMycelium/pathfinder.vim'
