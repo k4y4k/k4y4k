@@ -78,6 +78,9 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 " Godot 🕺
 Plug 'habamax/vim-godot'
 
+" Discord Rich Presence (this one goes out to you, Ere)
+Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
+
 " ============= THE WRITING ROOM ===============================================
 
 " TODO: perhaps even LaTeX
