@@ -13,4 +13,4 @@
 [pull]
 	rebase = false
 [core]
-	editor = vim
+	editor = nvim
