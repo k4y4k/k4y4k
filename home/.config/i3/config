@@ -43,7 +43,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id feh --no-xinerama --bg-center /home/kayak/wall.jpg
 
 # have volume icon
-exec --no-startup-id volume-icon
+exec --no-startup-id volumeicon
 
 # get this party started
 exec --no-startup-id discord-canary
