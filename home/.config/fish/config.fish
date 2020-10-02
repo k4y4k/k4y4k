@@ -31,9 +31,6 @@ function git --wraps hub --description 'Alias for hub, which wraps git to provid
   hub $argv
 end
 
-source /usr/share/chruby/chruby.fish
-source /usr/share/chruby/auto.fish
-
 alias lss="exa -a --grid --long"
 
 homeshick --quiet refresh 2
