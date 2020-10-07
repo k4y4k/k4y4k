@@ -76,6 +76,9 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 " Godot 🕺
 Plug 'habamax/vim-godot'
 
+" See CSS colours
+Plug 'ap/vim-css-color'
+
 " ============= THE WRITING ROOM ===============================================
 
 " TODO: perhaps even LaTeX
