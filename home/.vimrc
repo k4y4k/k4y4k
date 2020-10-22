@@ -34,6 +34,7 @@ Plug 'terryma/vim-multiple-cursors'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug '/usr/bin/fzf'
 
 " Colour theme
