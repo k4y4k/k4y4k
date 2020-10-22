@@ -239,4 +239,7 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
+" ctrl + / clears the last search
+noremap <silent> <c-_> :let @/ = ""<CR>
+
 " END KAYAK ZONE ===============================================================
