@@ -34,3 +34,6 @@ end
 alias lss="exa -a --grid --long"
 
 homeshick --quiet refresh 2
+
+alias shut-up="dunstctl close-all"
+alias zz="shut-up"
