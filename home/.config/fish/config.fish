@@ -37,3 +37,7 @@ homeshick --quiet refresh 2
 
 alias shut-up="dunstctl close-all"
 alias zz="shut-up"
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# fix ruby
+set PATH $PATH (ruby -e 'puts Gem.user_dir')/bin
