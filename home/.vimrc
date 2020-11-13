@@ -80,6 +80,10 @@ Plug 'habamax/vim-godot'
 " See CSS colours
 Plug 'ap/vim-css-color'
 
+" Zetty Betty
+Plug 'vimwiki/vimwiki'
+Plug 'michal-h21/vim-zettel'
+
 " ============= THE WRITING ROOM ===============================================
 
 " TODO: perhaps even LaTeX
@@ -241,5 +245,19 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 " ctrl + / clears the last search
 noremap <silent> <c-_> :let @/ = ""<CR>
+
+" Set up my existing Zetty Betty (Zettlekasten 😂)
+let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/TheWritingRoom/',
+      \ 'syntax': 'markdown',
+      \ 'ext': '.md',
+      \ 'index': 'Scratchpad'
+      \ }]
+
+" not every .md is for vimwiki
+let g:vimwiki_global_ext = 0
+
+" Search in the Zettlekasten
+let g:nv_search_paths = ['~/MEGA/Projects/flintt/TheWritingRoom']
+let g:zettel_format = "%Y%m%d%H%M %title"
 
 " END KAYAK ZONE ===============================================================
