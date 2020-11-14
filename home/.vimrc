@@ -53,9 +53,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'moll/vim-bbye'
 Plug 'aymericbeaumet/vim-symlink'
 
-" smooth scrolling
-Plug 'yuttie/comfortable-motion.vim'
-
 " easily delete, change and add such surroundings in pairs.
 Plug 'tpope/vim-surround'
 
@@ -103,11 +100,6 @@ Plug 'junegunn/limelight.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']
 " ============================================================ END UNDĀIN MĖIYRR
 
 " TODO: conceal keywords and add in math symbols
-
-" Pathfinder (alternatively: want loop errors every 20 seconds?)
-if has('python3') && has('timers') && !has("nvim")
-  Plug 'AlphaMycelium/pathfinder.vim'
-endif
 
 call plug#end()
 
