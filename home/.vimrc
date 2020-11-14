@@ -81,6 +81,9 @@ Plug 'ap/vim-css-color'
 Plug 'vimwiki/vimwiki'
 Plug 'michal-h21/vim-zettel'
 
+" Pandoc integration
+Plug 'vim-pandoc/vim-pandoc'
+
 " ============= THE WRITING ROOM ===============================================
 
 " TODO: perhaps even LaTeX
@@ -250,6 +253,19 @@ let g:vimwiki_global_ext = 0
 
 " Search in the Zettlekasten
 let g:nv_search_paths = ['~/MEGA/Projects/flintt/TheWritingRoom']
+
+" New Zettles are filenamed like 202011141509 (extension defined in
+" g:vimwiki_list above)
 let g:zettel_format = "%Y%m%d%H%M %title"
+
+" use [[ ]] style links for Zettlekasten
+let g:zettel_link_format="[[%title]]"
+
+let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
+
+" It allows to move the cursor past the last character. If you insert a new
+" character there, it is automatically padded with spaces.
+set virtualedit=all
+
 
 " END KAYAK ZONE ===============================================================
