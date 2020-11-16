@@ -259,7 +259,7 @@ let g:nv_search_paths = ['~/MEGA/Projects/flintt/TheWritingRoom']
 let g:zettel_format = "%Y%m%d%H%M %title"
 
 " use [[ ]] style links for Zettlekasten
-let g:zettel_link_format="[[%title]]"
+let g:zettel_link_format="[[%link]]"
 
 let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
 
