@@ -41,3 +41,13 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 # fix ruby
 set PATH $PATH (ruby -e 'puts Gem.user_dir')/bin
+
+function np #[n]vim-[p]rettier
+  # get full path + filename (passed in as argument)
+  set EDITING $argv
+  # extract dir from full path
+  set EDITINGPATH (dirname $argv)
+
+  # after finishing up in nvim, run prettier on the dir
+  nvim -p $argv && prettier --write $EDITINGPATH/*.*
+end
