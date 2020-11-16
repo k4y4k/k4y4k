@@ -267,5 +267,6 @@ let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading
 " character there, it is automatically padded with spaces.
 set virtualedit=all
 
+set dictionary+=~/en.utf-8.add
 
 " END KAYAK ZONE ===============================================================
