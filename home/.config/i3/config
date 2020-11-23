@@ -213,3 +213,8 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+# Borders, be gone
+default_border pixel 1
+default_floating_border pixel 1
+hide_edge_borders smart
