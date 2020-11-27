@@ -4,7 +4,7 @@ and not set -q TMUX
 end
 
 set -Ux ANDROID_HOME /opt/android-sdk
-set -Ux ANDROID_NDK_ROOT /opt/android-sdk/ndk/21.0.6113669
+set -Ux ANDROID_NDK_ROOT /opt/android-ndk
 
 set PATH $ANDROID_HOME/tools $PATH
 set PATH $ANDROID_HOME/platform-tools $PATH
