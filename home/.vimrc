@@ -246,7 +246,11 @@ let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/TheWritingRoom/',
       \ 'syntax': 'markdown',
       \ 'ext': '.md',
       \ 'index': 'Scratchpad'
-      \ }]
+      \ },
+      \ {'path': "~/MEGA/zet/",
+      \ 'syntax':'markdown',
+      \ 'ext':'.md',
+      \ 'index': '_inbox'}]
 
 " not every .md is for vimwiki
 let g:vimwiki_global_ext = 0
