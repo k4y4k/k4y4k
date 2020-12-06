@@ -37,8 +37,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug '/usr/bin/fzf'
 
-" Colour theme
+" Colour themes
 Plug 'reedes/vim-colors-pencil'
+Plug 'ayu-theme/ayu-vim'
 
 " Better commenting
 Plug 'preservim/nerdcommenter'
@@ -112,9 +113,12 @@ call plug#end()
 " ========== INDIVIDUAL SETTINGS ===============================================
 
 " configure colour scheme
-colorscheme pencil
-let g:airline_theme = 'pencil'
+set termguicolors
 set background=dark
+let ayucolor='dark'
+
+let g:airline_theme = 'pencil'
+colorscheme ayu
 
 " Force JSON to hide quotes
 let g:vim_json_syntax_conceal = 1
