@@ -50,3 +50,5 @@ function np #[n]vim-[p]rettier
   # after finishing up in nvim, run prettier on the dir
   nvim -p $argv && prettier --write $EDITINGPATH/*.*
 end
+
+alias uvim="nvim -c 'PlugClean!|PlugUpdate|PlugInstall|qa'"
