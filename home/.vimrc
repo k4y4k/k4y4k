@@ -298,7 +298,7 @@ inoremap <C-z> <C-r>=ZoteroCite()<CR>
   set noshowcmd
   set scrolloff=999
   Limelight
-  Pencil
+  PencilSoft
 endfunction
 
 function! s:goyo_leave()
