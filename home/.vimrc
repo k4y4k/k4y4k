@@ -200,7 +200,7 @@ set shiftwidth=2
 
 " Keep cursor in approximately the middle of the screen (I usually use a
 " horizontal display)
-set scrolloff=50
+set scrolloff=999
 
 " Wrap searches around the end of the file
 set wrapscan
@@ -299,7 +299,6 @@ inoremap <C-z> <C-r>=ZoteroCite()<CR>
   set scrolloff=999
   Limelight
   Pencil
-  " ...
 endfunction
 
 function! s:goyo_leave()
@@ -309,10 +308,9 @@ function! s:goyo_leave()
   endif
   set showmode
   set showcmd
-  set scrolloff=5
+  set scrolloff=999
   Limelight!
   PencilOff
-  " ...
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
