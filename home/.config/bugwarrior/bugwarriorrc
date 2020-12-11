@@ -16,4 +16,5 @@
 
 [trello]
   service = trello
-  trello.include_boards = BgmeyxGe
+  trello.include_boards = BgmeyxGe, oOke1vxB
+  trello.exclude_lists = Done
