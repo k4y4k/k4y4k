@@ -82,9 +82,6 @@ Plug 'ap/vim-css-color'
 Plug 'vimwiki/vimwiki'
 Plug 'michal-h21/vim-zettel'
 
-" Pandoc integration
-Plug 'vim-pandoc/vim-pandoc'
-
 " ============= THE WRITING ROOM ===============================================
 
 " TODO: perhaps even LaTeX
