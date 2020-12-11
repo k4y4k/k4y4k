@@ -272,6 +272,7 @@ let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading
 " character there, it is automatically padded with spaces.
 set virtualedit=all
 
+" Add spellfile to dictionary source for coc-word
 set dictionary+=~/en.utf-8.add
 
 function! ZoteroCite()
@@ -284,6 +285,16 @@ endfunction
 
 noremap <leader>z "=ZoteroCite()<CR>p
 inoremap <C-z> <C-r>=ZoteroCite()<CR>
+
+function! ZoteroBib()
+  " pick a format based on the filetype (customize at will)
+  let api_call = 'http://127.0.0.1:23119/better-bibtex/cayw?format=formatted-bibliography'
+  let ref = system('curl -s '.shellescape(api_call))
+  return ref
+endfunction
+
+noremap <leader>Z "=ZoteroBib()<CR>p
+inoremap <C-z> <C-r>=ZoteroBib()<CR>
 
 " custom Goyo entry and leave
  function! s:goyo_enter()
