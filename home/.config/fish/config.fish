@@ -51,9 +51,11 @@ function np #[n]vim-[p]rettier
   nvim -p $argv && prettier --write $EDITINGPATH/*.*
 end
 
-
 # Update nVIM
 alias uvim="nvim -c 'PlugClean!|PlugUpdate|PlugInstall|qa'"
 
 # remake Spellfile for n/VIM
 alias svim="nvim -c 'mkspell! ~/en.utf-8.add'"
+
+# [p]ush to [a]ll remotes
+alias pa='git remote | xargs -L1 git push --all'
