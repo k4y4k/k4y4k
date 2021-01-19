@@ -324,4 +324,10 @@ endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
+" *.tsx files are React w/ TypeScript
+augroup tsx
+  au!
+  au BufRead,BufNewFile *.tsx set filetype=typescript.react
+augroup END
+
 " END KAYAK ZONE ===============================================================
