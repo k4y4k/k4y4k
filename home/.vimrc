@@ -159,7 +159,7 @@ augroup the_meiyrr
 augroup END
 
 " Rebuild spellfile on command only
-nnoremap <leader>Z :mkspell! ~/en.utf-8.add<CR>
+nnoremap <leader>S :mkspell! ~/en.utf-8.add<CR>
 
 " turn on that sweet line bg
 set cursorline
