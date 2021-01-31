@@ -1,7 +1,3 @@
-if status is-interactive
-and not set -q TMUX
-    exec tmux
-end
 
 set -Ux ANDROID_HOME /opt/android-sdk
 set -Ux ANDROID_NDK_ROOT /opt/android-ndk
