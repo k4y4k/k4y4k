@@ -205,8 +205,11 @@ bar {
         status_command i3status
 }
 
-
+# Super + , for emoji
 bindsym $mod+comma exec splatmoji type
+
+# Super + . for screenshots
+bindsym $mod+period exec spectacle -creb
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
