@@ -21,16 +21,9 @@ Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
 
 " Syntax things
 Plug 'dense-analysis/ale'
-Plug 'sheerun/vim-polyglot'
 
 " completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" Emmet
-Plug 'mattn/emmet-vim'
-
-" Multiple cursors
-Plug 'terryma/vim-multiple-cursors'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -44,18 +37,12 @@ Plug 'ayu-theme/ayu-vim'
 " Better commenting
 Plug 'preservim/nerdcommenter'
 
-" highlight trailing spaces
-Plug 'bronson/vim-trailing-whitespace'
-
 " status bar and theme
 Plug 'vim-airline/vim-airline'
 
 " Follow symlinks
 Plug 'moll/vim-bbye'
 Plug 'aymericbeaumet/vim-symlink'
-
-" easily delete, change and add such surroundings in pairs.
-Plug 'tpope/vim-surround'
 
 " Prettier!!!
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
@@ -68,12 +55,6 @@ Plug 'preservim/nerdcommenter'
 
 " Close brackets
 Plug 'Raimondi/delimitMate'
-
-" styled-components
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-
-" Godot 🕺
-Plug 'habamax/vim-godot'
 
 " See CSS colours
 Plug 'ap/vim-css-color'
@@ -130,8 +111,6 @@ set number
 set spelllang=en_au
 set spellfile=$HOME/en.utf-8.add
 
-" TODO: thesaurus?
-
 " when we load lexical, enable spellcheck by default
 let g:lexical#spell = 1
 
@@ -168,10 +147,6 @@ set cursorcolumn
 " Toggle Goyo with ctrl+G (remember, Goyo's only loaded in the Mėiyrr)
 nnoremap <C-g> :Goyo<CR>
 
-" Similarly, toggle Limelight with <leader>+l / <leader>+L
-nnoremap <leader>l :Limelight<CR>
-nnoremap <leader>L :Limelight!<CR>
-
 " Configuration for vim-markdown
 let g:vim_markdown_conceal = 2
 let g:vim_markdown_conceal_code_blocks = 0
@@ -204,27 +179,6 @@ set wrapscan
 
 " comment like // ... rather than //...
 let NERDSpaceDelims=1
-
-" enable hybrid line numbers in normal mode because I can't count, but keep
-" the absolute one in insert mode
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
-
-" setup and keyboard shortcuts for Godot
-func! GodotSettings() abort
-  setlocal foldmethod=expr
-  setlocal tabstop=4
-  nnoremap <buffer> <F4> :GodotRunLast<CR>
-  nnoremap <buffer> <F5> :GodotRun<CR>
-  nnoremap <buffer> <F6> :GodotRunCurrent<CR>
-  nnoremap <buffer> <F7> :GodotRunFZF<CR>
-endfunc
-augroup godot | au!
-  au FileType gdscript call GodotSettings()
-augroup end
 
 " use folding
 set foldmethod=syntax
@@ -324,10 +278,17 @@ endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
+" FIXING TYPESCRIPT ============================================================
+
 " *.tsx files are React w/ TypeScript
 augroup tsx
   au!
-  au BufRead,BufNewFile *.tsx set filetype=typescript.react
+  " be able to open *.tsx files
+  au BufRead,BufNewFile *.tsx set suffixesadd+=.tsx
+  au BufRead,BufNewFile *.tsx set filetype=typescript.tsx
 augroup END
+
+" insta linting
+set updatetime=300
 
 " END KAYAK ZONE ===============================================================
