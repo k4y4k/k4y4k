@@ -19,9 +19,6 @@ Plug 'tpope/vim-sensible'
 Plug 'wakatime/vim-wakatime'
 Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
 
-" Syntax things
-Plug 'dense-analysis/ale'
-
 " completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -89,6 +86,9 @@ call plug#end()
 
 " KAYAK ZONE ===================================================================
 " ========== INDIVIDUAL SETTINGS ===============================================
+
+" don't randomly jump to the start of the line (?!)
+set nostartofline
 
 " configure colour scheme
 set termguicolors
@@ -197,7 +197,7 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 noremap <silent> <c-_> :let @/ = ""<CR>
 
 " Set up my existing Zetty Betty (Zettlekasten 😂)
-let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/TheWritingRoom/',
+let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/',
       \ 'syntax': 'markdown',
       \ 'ext': '.md',
       \ 'index': 'Scratchpad'
