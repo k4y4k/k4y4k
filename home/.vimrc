@@ -60,6 +60,9 @@ Plug 'ap/vim-css-color'
 Plug 'vimwiki/vimwiki'
 Plug 'michal-h21/vim-zettel'
 
+" Type in browser w/ vim
+Plug 'subnut/nvim-ghost.nvim', {'do': ':call nvim_ghost#installer#install()'}
+
 " ============= THE WRITING ROOM ===============================================
 
 " TODO: perhaps even LaTeX
