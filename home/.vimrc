@@ -294,4 +294,6 @@ augroup END
 " insta linting
 set updatetime=300
 
+autocmd BufNewFile,BufRead *.mdx set filetype=markdown.mdx
+
 " END KAYAK ZONE ===============================================================
