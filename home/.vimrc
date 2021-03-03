@@ -205,7 +205,7 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 noremap <silent> <c-_> :let @/ = ""<CR>
 
 " Set up my existing Zetty Betty (Zettlekasten 😂)
-let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/',
+let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/TheWritingRoom',
       \ 'syntax': 'markdown',
       \ 'ext': '.md',
       \ 'index': 'Scratchpad'
