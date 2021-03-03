@@ -1,0 +1,80 @@
+scrolling:
+  # maximum number of lines in the scrollback buffer. Specifying '0' will
+  # disable scrolling.
+  history: 0
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 3
+
+# Font configuration (changes require restart)
+font:
+  normal:
+    family: InputMono
+    style: Light
+
+  bold:
+    family: InputMono
+    style: Medium
+
+  # The italic font face
+  italic:
+    family: InputMono
+    style: Italic
+
+  # Point size of the font
+  size: 8
+
+  # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 1
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the x offset to move the glyph to
+  # the right, increase the y offset to move the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
+cursor:
+  # Cursor style
+  #
+  # Values for 'style':
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Beam
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+
+# Space Duck
+colors:
+  # Default colors
+  primary:
+    background: "#0f111b"
+    foreground: "#ecf0c1"
+  # Normal colors
+  normal:
+    black: "#000000"
+    red: "#e33400"
+    green: "#5ccc96"
+    yellow: "#b3a1e6"
+    blue: "#00a3cc"
+    magenta: "#f2ce00"
+    cyan: "#7a5ccc"
+    white: "#686f9a"
+
+  # Bright colors
+  bright:
+    black: "#686f9a"
+    red: "#e33400"
+    green: "#5ccc96"
+    yellow: "#b3a1e6"
+    blue: "#00a3cc"
+    magenta: "#f2ce00"
+    cyan: "#7a5ccc"
+    white: "#f0f1ce"

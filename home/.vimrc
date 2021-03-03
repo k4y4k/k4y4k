@@ -28,8 +28,7 @@ Plug 'junegunn/fzf.vim'
 Plug '/usr/bin/fzf'
 
 " Colour themes
-Plug 'reedes/vim-colors-pencil'
-Plug 'ayu-theme/ayu-vim'
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
 " Better commenting
 Plug 'preservim/nerdcommenter'
@@ -90,16 +89,22 @@ call plug#end()
 " KAYAK ZONE ===================================================================
 " ========== INDIVIDUAL SETTINGS ===============================================
 
+set t_ut=
+
 " don't randomly jump to the start of the line (?!)
 set nostartofline
 
 " configure colour scheme
-set termguicolors
 set background=dark
-let ayucolor='dark'
 
-let g:airline_theme = 'pencil'
-colorscheme ayu
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+colorscheme spaceduck
+let g:airline_theme = 'spaceduck'
 
 " Force JSON to hide quotes
 let g:vim_json_syntax_conceal = 1
@@ -222,8 +227,6 @@ let g:zettel_format = "%Y%m%d%H%M %title"
 
 " use [[ ]] style links for Zettlekasten
 let g:zettel_link_format="[[%link]]"
-
-let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
 
 " It allows to move the cursor past the last character. If you insert a new
 " character there, it is automatically padded with spaces.
