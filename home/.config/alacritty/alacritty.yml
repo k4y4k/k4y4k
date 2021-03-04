@@ -10,20 +10,23 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   normal:
-    family: InputMono
+    # family: Courier Prime Code
+    family: monofur Nerd Font
     style: Light
 
   bold:
-    family: InputMono
+    # family: Courier Prime Code
+    family: monofur Nerd Font
     style: Medium
 
   # The italic font face
   italic:
-    family: InputMono
+    # family: Courier Prime Code
+    family: monofur Nerd Font
     style: Italic
 
   # Point size of the font
-  size: 8
+  size: 10
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
