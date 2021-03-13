@@ -78,6 +78,9 @@ Plug 'junegunn/goyo.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
 " And something to help me focus in the all-too-way-too-very-big terminal
 Plug 'junegunn/limelight.vim', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
 
+" CANT EDIT WHAT YOU CANT SEE AM I RIGHT BOYS
+Plug 'swordguin/vim-veil'
+
 " ============================================================ END UNDĀIN MĖIYRR
 
 " TODO: conceal keywords and add in math symbols
@@ -292,5 +295,8 @@ augroup END
 set updatetime=300
 
 autocmd BufNewFile,BufRead *.mdx set filetype=markdown.mdx
+
+" Vim veil
+nmap <F12> <Plug>Veil
 
 " END KAYAK ZONE ===============================================================
