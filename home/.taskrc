@@ -2,6 +2,24 @@
 data.location=~/.task
 
 # Bugwarrior UDAs
+uda.trellocard.type=string
+uda.trellocard.label=Trello card name
+uda.trellocardid.type=string
+uda.trellocardid.label=Trello card ID
+uda.trellocardidshort.type=numeric
+uda.trellocardidshort.label=Trello short card ID
+uda.trellodescription.type=string
+uda.trellodescription.label=Trello description
+uda.trelloboard.type=string
+uda.trelloboard.label=Trello board name
+uda.trellolist.type=string
+uda.trellolist.label=Trello list name
+uda.trelloshortlink.type=string
+uda.trelloshortlink.label=Trello shortlink
+uda.trelloshorturl.type=string
+uda.trelloshorturl.label=Trello short URL
+uda.trellourl.type=string
+uda.trellourl.label=Trello URL
 uda.githubtitle.type=string
 uda.githubtitle.label=Github Title
 uda.githubbody.type=string
@@ -29,3 +47,8 @@ uda.githubnamespace.label=Github Namespace
 uda.githubstate.type=string
 uda.githubstate.label=GitHub State
 # END Bugwarrior UDAs
+
+include /usr/share/doc/task/rc/dark-16.theme
+
+urgency.user.project.flintt.coefficient=2.0
+report.minimal.sort=project+/,id+/,description+
