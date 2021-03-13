@@ -188,12 +188,6 @@ set wrapscan
 " comment like // ... rather than //...
 let NERDSpaceDelims=1
 
-" use folding
-set foldmethod=syntax
-set foldlevelstart=1
-
-let javaScript_fold=1
-
 " tab completion for coc
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
