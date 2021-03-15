@@ -8,6 +8,7 @@
   github.add_tags = github
   github.username = k4y4k
   github.login = k4y4k
+  github.description_template = #{{githubnumber}}: {{githubtitle}} .. {{githuburl}}
 
 [notifications]
   notifications = True
@@ -18,3 +19,5 @@
   service = trello
   trello.include_boards = BgmeyxGe,oOke1vxB,spMTbyLX,0EjgVm1o
   trello.exclude_lists = Done
+  trello.add_tags = trello
+  trello.description_template = {{trellocard}} .. {{trelloshorturl}}
