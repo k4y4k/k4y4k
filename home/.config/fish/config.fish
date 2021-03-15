@@ -55,3 +55,6 @@ alias svim="nvim -c 'mkspell! ~/en.utf-8.add'"
 
 # [p]ush to [a]ll remotes
 alias pa='git remote | xargs -L1 git push --all'
+
+# what now?
+alias what-now="task what"
