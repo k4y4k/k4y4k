@@ -1,5 +1,5 @@
 # Files
-data.location=~/.task
+data.location=~/MEGA/task
 
 # Bugwarrior UDAs
 
@@ -57,6 +57,16 @@ urgency.user.project.flintt.coefficient=1.5
 report.minimal.sort=project+/,id+/,description+
 
 report.what.description=What now?
-report.what.columns=id,project,description,urgency
+report.what.columns=id,project,description.desc,urgency
 report.what.sort=urgency-
-report.what.filter=status:pending limit:page 
+report.what.filter=status:pending limit:page -BLOCKED -not_now
+
+uda.reviewed.type=date
+uda.reviewed.label=Reviewed
+
+report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
+report._reviewed.columns=uuid
+report._reviewed.sort=reviewed+,modified+
+report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
+
+urgency.user.project.Reading list.coefficient=-100
