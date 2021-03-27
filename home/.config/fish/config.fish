@@ -1,4 +1,7 @@
 set TERM tmux-256color
+
+set EDITOR nvim
+
 set -Ux ANDROID_HOME /opt/android-sdk
 set -Ux ANDROID_NDK_ROOT /opt/android-ndk
 
