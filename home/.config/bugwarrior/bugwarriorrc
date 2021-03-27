@@ -1,6 +1,7 @@
 [general]
   targets = github,trello
   log.level = INFO
+  annotation_links = True
 
 [github]
   service = github
@@ -9,6 +10,7 @@
   github.username = k4y4k
   github.login = k4y4k
   github.description_template = #{{githubnumber}}: {{githubtitle}} .. {{githuburl}}
+  github.description_template = #{{githubnumber}}: {{githubtitle}}
 
 [notifications]
   notifications = True
@@ -17,7 +19,10 @@
 
 [trello]
   service = trello
-  trello.include_boards = BgmeyxGe,oOke1vxB,spMTbyLX,0EjgVm1o
-  trello.exclude_lists = Done
+  trello.include_boards = BgmeyxGe,oOke1vxB,spMTbyLX,0EjgVm1o,87Q65XPH,6UI9y5wW
+  trello.exclude_lists = Done,Not Now,Blocked,Published
   trello.add_tags = trello
   trello.description_template = {{trellocard}} .. {{trelloshorturl}}
+  trello.only_if_assigned = k4y4k
+  trello.also_unassigned = True
+  trello.import_labels_as_tags = True
