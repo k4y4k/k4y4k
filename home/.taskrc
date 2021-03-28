@@ -52,7 +52,7 @@ uda.githubstate.label=GitHub State
 
 include /usr/share/doc/task/rc/dark-16.theme
 
-urgency.user.project.flintt.coefficient=1.5
+urgency.user.project.flintt.coefficient=1.25
 
 report.minimal.sort=project+/,id+/,description+
 
@@ -70,3 +70,5 @@ report._reviewed.sort=reviewed+,modified+
 report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
 
 urgency.user.project.Reading list.coefficient=-100
+
+urgency.annotations.coefficient=0.5
