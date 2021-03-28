@@ -1,5 +1,5 @@
 [general]
-  targets = github,trello
+  targets = github,trello,optional-trello
   log.level = INFO
   annotation_links = True
 
@@ -19,10 +19,24 @@
 
 [trello]
   service = trello
-  trello.include_boards = BgmeyxGe,oOke1vxB,spMTbyLX,0EjgVm1o,87Q65XPH,6UI9y5wW
+  trello.include_boards = BgmeyxGe,oOke1vxB,spMTbyLX,87Q65XPH,p2StODwO
   trello.exclude_lists = Done,Not Now,Blocked,Published
   trello.add_tags = trello
-  trello.description_template = {{trellocard}} .. {{trelloshorturl}}
+  trello.description_template = [{{trellolist}}] {{trellocard}} .. {{trelloshorturl}}
   trello.only_if_assigned = k4y4k
   trello.also_unassigned = True
   trello.import_labels_as_tags = True
+  trello.label_template = {{label|replace(' ', '-')}}
+
+[optional-trello]
+  service = trello
+  trello.include_boards = 0EjgVm1o,6UI9y5wW
+  trello.exclude_lists = Done,Not Now,Blocked,Published
+  trello.api_key = ***REMOVED***
+  trello.token = ***REMOVED***
+  trello.add_tags = trello,optional
+  trello.description_template = [{{trellolist}}] {{trellocard}} .. {{trelloshorturl}}
+  trello.only_if_assigned = k4y4k
+  trello.also_unassigned = True
+  trello.import_labels_as_tags = True
+  trello.label_template = {{label|replace(' ', '-')}}
