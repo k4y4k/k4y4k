@@ -46,9 +46,6 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Auto save on every change in normal mode and upon leaving insert mode
 Plug '907th/vim-auto-save'
 
-" Commenting superpowers
-Plug 'preservim/nerdcommenter'
-
 " Close brackets
 Plug 'Raimondi/delimitMate'
 
