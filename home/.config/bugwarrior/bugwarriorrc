@@ -10,7 +10,6 @@
   github.username = k4y4k
   github.login = k4y4k
   github.description_template = #{{githubnumber}}: {{githubtitle}} .. {{githuburl}}
-  github.description_template = #{{githubnumber}}: {{githubtitle}}
 
 [notifications]
   notifications = True
@@ -32,8 +31,6 @@
   service = trello
   trello.include_boards = 0EjgVm1o,6UI9y5wW
   trello.exclude_lists = Done,Not Now,Blocked,Published
-  trello.api_key = ***REMOVED***
-  trello.token = ***REMOVED***
   trello.add_tags = trello,optional
   trello.description_template = [{{trellolist}}] {{trellocard}} .. {{trelloshorturl}}
   trello.only_if_assigned = k4y4k
