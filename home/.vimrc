@@ -19,8 +19,9 @@ Plug 'tpope/vim-sensible'
 Plug 'wakatime/vim-wakatime'
 Plug 'https://gitlab.com/code-stats/code-stats-vim.git'
 
-" completion
+" syntax
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sheerun/vim-polyglot'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
