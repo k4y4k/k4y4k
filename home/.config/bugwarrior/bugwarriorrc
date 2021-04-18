@@ -1,5 +1,5 @@
 [general]
-  targets = github,trello,optional-trello
+  targets = github,trello,trello-optional,trello-datastructures
   log.level = INFO
   annotation_links = True
 
@@ -9,7 +9,7 @@
   github.add_tags = github
   github.username = k4y4k
   github.login = k4y4k
-  github.description_template = #{{githubnumber}}: {{githubtitle}} .. {{githuburl}}
+  github.description_template = #{{githubnumber}}: {{githubtitle}}
 
 [notifications]
   notifications = True
@@ -18,21 +18,32 @@
 
 [trello]
   service = trello
-  trello.include_boards = BgmeyxGe,oOke1vxB,spMTbyLX,87Q65XPH,p2StODwO
-  trello.exclude_lists = Done,Not Now,Blocked,Published
+  trello.include_boards = BgmeyxGe,spMTbyLX,87Q65XPH,p2StODwO,6BiqdIet
+  trello.exclude_lists = Maybe Not,Done,Not Now,Blocked,Published
   trello.add_tags = trello
-  trello.description_template = [{{trellolist}}] {{trellocard}} .. {{trelloshorturl}}
+  trello.description_template = [{{trellolist}}] {{trellocard}}
   trello.only_if_assigned = k4y4k
   trello.also_unassigned = True
   trello.import_labels_as_tags = True
   trello.label_template = {{label|replace(' ', '-')}}
 
-[optional-trello]
+[trello-optional]
   service = trello
   trello.include_boards = 0EjgVm1o,6UI9y5wW
   trello.exclude_lists = Done,Not Now,Blocked,Published
   trello.add_tags = trello,optional
-  trello.description_template = [{{trellolist}}] {{trellocard}} .. {{trelloshorturl}}
+  trello.description_template = [{{trellolist}}] {{trellocard}}
+  trello.only_if_assigned = k4y4k
+  trello.also_unassigned = True
+  trello.import_labels_as_tags = True
+  trello.label_template = {{label|replace(' ', '-')}}
+ 
+[trello-datastructures]
+  service = trello
+  trello.include_boards = oOke1vxB
+  trello.exclude_lists = Done,Not Now,Blocked,Published
+  trello.add_tags = trello
+  trello.description_template = [{{trellolist}}] {{trellocard}}
   trello.only_if_assigned = k4y4k
   trello.also_unassigned = True
   trello.import_labels_as_tags = True
