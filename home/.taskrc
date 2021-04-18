@@ -50,7 +50,7 @@ uda.githubstate.label=GitHub State
 
 include /usr/share/doc/task/rc/dark-16.theme
 
-urgency.user.project.flintt.coefficient=1.25
+urgency.user.project.flintt.coefficient=1.01
 
 report.minimal.sort=project+/,id+/,description+
 
