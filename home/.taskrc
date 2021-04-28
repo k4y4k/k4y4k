@@ -78,6 +78,12 @@ report.seq.columns=id,project,description.desc,urgency
 report.seq.sort=id+
 report.seq.filter=-COMPLETED
 
+report.completed.columns=uuid.short,entry,end,entry.age,depends,priority,project,tags,recur.indicator,due,description.count
+report.completed.description=Completed tasks
+report.completed.filter=status:completed
+report.completed.labels=UUID,Created,Completed,Age,Deps,P,Project,Tags,R,Due,Description
+report.completed.sort=end+
+
 urgency.user.project.Reading list.coefficient=-100
 
 urgency.annotations.coefficient=0.5
