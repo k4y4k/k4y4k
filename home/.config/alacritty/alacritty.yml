@@ -10,19 +10,16 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   normal:
-    # family: Courier Prime Code
-    family: monofur Nerd Font
+    family: Courier Prime Code
     style: Light
 
   bold:
-    # family: Courier Prime Code
-    family: monofur Nerd Font
+    family: Courier Prime Code
     style: Medium
 
   # The italic font face
   italic:
-    # family: Courier Prime Code
-    family: monofur Nerd Font
+    family: Courier Prime Code
     style: Italic
 
   # Point size of the font
@@ -32,7 +29,7 @@ font:
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
     x: 0
-    y: 1
+    y: 2
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to
@@ -58,26 +55,26 @@ cursor:
 colors:
   # Default colors
   primary:
-    background: "#0f111b"
-    foreground: "#ecf0c1"
+    background: '#0f111b'
+    foreground: '#ecf0c1'
   # Normal colors
   normal:
-    black: "#000000"
-    red: "#e33400"
-    green: "#5ccc96"
-    yellow: "#b3a1e6"
-    blue: "#00a3cc"
-    magenta: "#f2ce00"
-    cyan: "#7a5ccc"
-    white: "#686f9a"
+    black: '#000000'
+    red: '#e33400'
+    green: '#5ccc96'
+    yellow: '#b3a1e6'
+    blue: '#00a3cc'
+    magenta: '#f2ce00'
+    cyan: '#7a5ccc'
+    white: '#686f9a'
 
   # Bright colors
   bright:
-    black: "#686f9a"
-    red: "#e33400"
-    green: "#5ccc96"
-    yellow: "#b3a1e6"
-    blue: "#00a3cc"
-    magenta: "#f2ce00"
-    cyan: "#7a5ccc"
-    white: "#f0f1ce"
+    black: '#686f9a'
+    red: '#e33400'
+    green: '#5ccc96'
+    yellow: '#b3a1e6'
+    blue: '#00a3cc'
+    magenta: '#f2ce00'
+    cyan: '#7a5ccc'
+    white: '#f0f1ce'
