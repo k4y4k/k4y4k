@@ -54,6 +54,12 @@ urgency.user.project.flintt.coefficient=1.01
 
 report.minimal.sort=project+/,id+/,description+
 
+report.next.columns=id,start.age,entry.age,depends,project,tags.count,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
+report.next.description=Most urgent tasks
+report.next.filter=status:pending limit:page
+report.next.labels=ID,Active,Age,Deps,Project,Tag,Recur,S,Due,Until,Description,Urg
+report.next.sort=urgency-
+
 report.what.description=What now?
 report.what.columns=id,project,description.desc,urgency
 report.what.sort=urgency-
