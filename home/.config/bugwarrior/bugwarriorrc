@@ -1,6 +1,6 @@
 [general]
-  targets = github,trello,trello-optional,trello-datastructures
-  log.level = INFO
+  targets = github,trello,trello-optional
+  log.level = DEBUG
   annotation_links = True
 
 [github]
@@ -32,17 +32,6 @@
   trello.include_boards = 0EjgVm1o,6UI9y5wW
   trello.exclude_lists = Done,Not Now,Blocked,Published
   trello.add_tags = trello,optional
-  trello.description_template = [{{trellolist}}] {{trellocard}}
-  trello.only_if_assigned = k4y4k
-  trello.also_unassigned = True
-  trello.import_labels_as_tags = True
-  trello.label_template = {{label|replace(' ', '-')}}
- 
-[trello-datastructures]
-  service = trello
-  trello.include_boards = oOke1vxB
-  trello.exclude_lists = Done,Not Now,Blocked,Published
-  trello.add_tags = trello
   trello.description_template = [{{trellolist}}] {{trellocard}}
   trello.only_if_assigned = k4y4k
   trello.also_unassigned = True
