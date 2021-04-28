@@ -73,6 +73,11 @@ report._reviewed.columns=uuid
 report._reviewed.sort=reviewed+,modified+
 report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
 
+report.seq.description=What now?
+report.seq.columns=id,project,description.desc,urgency
+report.seq.sort=id+
+report.seq.filter=-COMPLETED
+
 urgency.user.project.Reading list.coefficient=-100
 
 urgency.annotations.coefficient=0.5
