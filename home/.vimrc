@@ -8,6 +8,8 @@ set nocompatible
 filetype on
 syntax enable
 
+let g:polyglot_disabled = ['markdown']
+
 " VIM-PLUG =====================================================================
 
 call plug#begin('~/.vim/plugged')
