@@ -5,6 +5,10 @@ set -Ux EDITOR nvim
 set -Ux ANDROID_HOME /home/kayak/android-sdk
 set -Ux ANDROID_NDK_ROOT /home/kayak/android-ndk
 
+set -Ux GTK_IM_MODULE fcitx
+set -Ux QT_IM_MODULE fcitx
+set -Ux XMODIFIERS @im=fcitx
+
 set PATH $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools $PATH
 
 set PATH /home/kayak/.local/bin /home/kayak/bin $PATH
