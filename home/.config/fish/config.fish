@@ -60,3 +60,10 @@ function np #[n]vim-[p]rettier
   # after finishing up in nvim, run prettier on the dir
   nvim -p $argv && prettier --write $EDITINGPATH/*.*
 end
+function st #[s]tart [t]ask
+    set TASK $argv
+    task start $TASK
+    task $TASK | grep -i URL
+end
+
+alias stop="task +ACTIVE stop; timew stop"
