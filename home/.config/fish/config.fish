@@ -52,14 +52,15 @@ homeshick --quiet refresh 2
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 function np #[n]vim-[p]rettier
-  # get full path + filename (passed in as argument)
-  set EDITING $argv
-  # extract dir from full path
-  set EDITINGPATH (dirname $argv)
+    # get full path + filename (passed in as argument)
+    set EDITING $argv
+    # extract dir from full path
+    set EDITINGPATH (dirname $argv)
 
-  # after finishing up in nvim, run prettier on the dir
-  nvim -p $argv && prettier --write $EDITINGPATH/*.*
+    # after finishing up in nvim, run prettier on the dir
+    nvim -p $argv && prettier --write $EDITINGPATH/*.*
 end
+
 function st #[s]tart [t]ask
     set TASK $argv
     task start $TASK
