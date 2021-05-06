@@ -1,0 +1,8 @@
+name: zet
+root: /home/kayak/MEGA/zet
+
+windows:
+  - nvim:
+      layout: main-vertical
+      panes:
+        - nvim -p README.md && prettier --write .
