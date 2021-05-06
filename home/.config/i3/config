@@ -32,6 +32,8 @@ exec --no-startup-id nm-applet
 
 # enable Colemak
 exec --no-startup-id  setxkbmap us -variant colemak -option compose:rctrl
+# type in glorious nihongo
+exec --no-startup-id fcitx -d
 
 # set up multiple screens (script generated via arandr)
 exec --no-startup-id /home/kayak/.screenlayout/screens.sh
