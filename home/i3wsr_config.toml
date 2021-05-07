@@ -2,6 +2,11 @@
 TelegramDesktop = "Telegram"
 "Org\\.gnome\\.Nautilus" = "Nautilus"
 brave-browser = "Brave"
+Navigator = "Zotero"
+obsidian = "Obsidian"
+trello = "Trello"
+sublime_merge = "Sublime Merge"
+discord = "Discord"
 
 [general]
 wm_property = "instance"
