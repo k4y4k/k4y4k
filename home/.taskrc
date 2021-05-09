@@ -73,7 +73,7 @@ report._reviewed.columns=uuid
 report._reviewed.sort=reviewed+,modified+
 report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
 
-report.seq.description=What now?
+report.seq.description=Tasks in sequential order
 report.seq.columns=id,project,description.desc,urgency
 report.seq.sort=id+
 report.seq.filter=-COMPLETED
