@@ -294,9 +294,13 @@ augroup END
 " insta linting
 set updatetime=300
 
+" .mdx files are Markdown JSX
 autocmd BufNewFile,BufRead *.mdx set filetype=markdown.mdx
 
 " Vim veil
 nmap <F12> <Plug>Veil
+
+" vimwiki no longer interferes with coc completion
+au filetype vimwiki silent! iunmap <buffer> <Tab>
 
 " END KAYAK ZONE ===============================================================
