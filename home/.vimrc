@@ -64,7 +64,6 @@ Plug 'subnut/nvim-ghost.nvim', {'do': ':call nvim_ghost#installer#install()'}
 
 " ============= THE WRITING ROOM ===============================================
 
-" TODO: perhaps even LaTeX
 
 " Make vim nice for writing
 Plug 'reedes/vim-pencil', {'for' : ['markdown', 'rmarkdown', 'text', 'rmd']}
