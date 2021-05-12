@@ -8,7 +8,7 @@ set nocompatible
 filetype on
 syntax enable
 
-let g:polyglot_disabled = ['markdown']
+let g:polyglot_disabled = ['markdown', 'vue']
 
 " VIM-PLUG =====================================================================
 
@@ -301,5 +301,8 @@ nmap <F12> <Plug>Veil
 
 " vimwiki no longer interferes with coc completion
 au filetype vimwiki silent! iunmap <buffer> <Tab>
+
+" fix vue slowness
+" let g:vue_disable_pre_processors=1
 
 " END KAYAK ZONE ===============================================================
