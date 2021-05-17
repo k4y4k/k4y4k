@@ -13,6 +13,8 @@ set PATH $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $AND
 
 set PATH ~/.npm-global/bin /home/kayak/.local/bin /home/kayak/bin $PATH
 
+set PATH ~/.cargo/bin $PATH
+
 # fix ruby
 set PATH $PATH (ruby -e 'puts Gem.user_dir')/bin
 
