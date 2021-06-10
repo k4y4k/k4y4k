@@ -62,6 +62,12 @@ Plug 'michal-h21/vim-zettel'
 " Type in browser w/ vim
 Plug 'subnut/nvim-ghost.nvim', {'do': ':call nvim_ghost#installer#install()'}
 
+" emmet
+Plug 'mattn/emmet-vim'
+
+" git
+Plug 'tpope/vim-fugitive'
+
 " ============= THE WRITING ROOM ===============================================
 
 
