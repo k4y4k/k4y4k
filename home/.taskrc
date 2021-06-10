@@ -51,6 +51,9 @@ uda.githubstate.label=GitHub State
 include /usr/share/doc/task/rc/dark-16.theme
 
 urgency.user.project.flintt.coefficient=1.01
+urgency.user.project.data-structures.coefficient=10
+urgency.user.project.Reading list.coefficient=-100
+urgency.annotations.coefficient=0.5
 
 report.minimal.sort=project+/,id+/,description+
 
@@ -84,6 +87,4 @@ report.completed.filter=status:completed
 report.completed.labels=UUID,Created,Completed,Age,Deps,P,Project,Tags,R,Due,Description
 report.completed.sort=end+
 
-urgency.user.project.Reading list.coefficient=-100
 
-urgency.annotations.coefficient=0.5
