@@ -18,7 +18,7 @@
 
 [trello]
   service = trello
-  trello.include_boards = BgmeyxGe,spMTbyLX,87Q65XPH,p2StODwO,6BiqdIet
+  trello.include_boards = BgmeyxGe,spMTbyLX,87Q65XPH,p2StODwO,gwaSh1WL
   trello.exclude_lists = Maybe Not,Done,Not Now,Blocked,Published
   trello.add_tags = trello
   trello.description_template = [{{trellolist}}] {{trellocard}}
