@@ -97,6 +97,11 @@ call plug#end()
 " KAYAK ZONE ===================================================================
 " ========== INDIVIDUAL SETTINGS ===============================================
 
+" folding
+set foldmethod=syntax
+set foldlevelstart=1
+let javaScript_fold=1
+
 set t_ut=
 
 " don't randomly jump to the start of the line (?!)
