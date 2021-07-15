@@ -225,8 +225,8 @@ let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/TheWritingRoom',
 " not every .md is for vimwiki
 let g:vimwiki_global_ext = 0
 
-" Search in the Zettlekasten
-let g:nv_search_paths = ['~/MEGA/Projects/flintt/TheWritingRoom']
+" Search in the Zettlekastens
+let g:nv_search_paths = ['~/MEGA/Projects/flintt/TheWritingRoom', '~/MEGA/zet']
 
 " New Zettles are filenamed like 202011141509 (extension defined in
 " g:vimwiki_list above)
