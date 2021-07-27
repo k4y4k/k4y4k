@@ -57,6 +57,12 @@ urgency.annotations.coefficient=0.5
 
 report.minimal.sort=project+/,id+/,description+
 
+report.alpha.sort=project+/,description+
+report.alpha.columns=id,project,tags.count,description.count
+report.alpha.description=Tasks sorted alphabetically
+report.alpha.filter=status:pending or status:waiting
+report.alpha.labels=ID,Project,Tags,Description
+
 report.next.columns=id,start.age,entry.age,depends,project,tags.count,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
 report.next.description=Most urgent tasks
 report.next.filter=status:pending limit:page
