@@ -1,5 +1,5 @@
 [general]
-  targets = github,trello,trello-optional
+  targets = github,trello,trello-optional,trello-thirdparty
   log.level = DEBUG
   annotation_links = True
 
@@ -29,11 +29,22 @@
 
 [trello-optional]
   service = trello
-  trello.include_boards = 0EjgVm1o,6UI9y5wW
+  trello.include_boards = 0EjgVm1o
   trello.exclude_lists = Done,Not Now,Blocked,Published
   trello.add_tags = trello,optional
   trello.description_template = [{{trellolist}}] {{trellocard}}
   trello.only_if_assigned = k4y4k
   trello.also_unassigned = True
+  trello.import_labels_as_tags = True
+  trello.label_template = {{label|replace(' ', '-')}}
+
+[trello-thirdparty]
+  service = trello
+  trello.include_boards = 4HWBiNqS
+  trello.exclude_lists = Done,Not Now,Blocked,Published
+  trello.add_tags = trello,optional
+  trello.description_template = [{{trellolist}}] {{trellocard}}
+  trello.only_if_assigned = k4y4k
+  trello.also_unassigned = False
   trello.import_labels_as_tags = True
   trello.label_template = {{label|replace(' ', '-')}}
