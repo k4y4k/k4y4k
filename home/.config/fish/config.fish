@@ -1,6 +1,8 @@
 set TERM tmux-256color
 set GOPATH /home/kayak/go
 
+set -Ux tide_pwd_truncate_margin 9999
+
 set -Ux EDITOR nvim
 
 set -Ux ANDROID_HOME /home/kayak/android-sdk
