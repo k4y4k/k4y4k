@@ -32,6 +32,7 @@ Plug '/usr/bin/fzf'
 
 " Colour themes
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+Plug 'morhetz/gruvbox'
 
 " Better commenting
 Plug 'preservim/nerdcommenter'
@@ -315,5 +316,9 @@ au filetype vimwiki silent! iunmap <buffer> <Tab>
 
 " fix vue slowness
 " let g:vue_disable_pre_processors=1
+"
+let g:airline#extensions#wordcount#filetypes =
+    \ ['asciidoc', 'help', 'mail', 'markdown', 'nroff', 'org', 'plaintex', 'rst', 'tex', 'text', 'vimwiki']
+
 
 " END KAYAK ZONE ===============================================================
