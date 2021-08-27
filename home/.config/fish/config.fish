@@ -69,6 +69,7 @@ function st #[s]tart [t]ask
     set TASK $argv
     task start $TASK
     task $TASK | grep -i "github url"
+    task $TASK | grep -i "trello url"
 end
 
 alias stop="task +ACTIVE stop; timew stop"
