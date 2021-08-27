@@ -44,7 +44,7 @@ font-0 = Cozette:pixelsize=10;1
 font-1 = "Monofur Nerd Font Mono:style=Book;5"
 
 modules-left = i3
-modules-right = filesystem pulseaudio memory cpu wlan temperature date 
+modules-right = spotify filesystem pulseaudio memory cpu wlan temperature date 
 
 tray-position = right
 tray-maxsize = 12
@@ -54,6 +54,16 @@ scroll-up = "#i3.prev"
 scroll-down = "#i3.next"
 
 cursor-scroll = false
+
+[module/spotify]
+type = custom/script
+interval = 1
+format = <label>
+exec = python .config/polybar/spotify_status.py -f '{song} — {artist}' -q -t 99
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous 
 
 [module/pulseaudio]
 type = internal/pulseaudio
