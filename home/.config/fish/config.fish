@@ -46,8 +46,6 @@ function zeal-docs-fix
     popd >/dev/null || exit
 end
 
-thefuck --alias | source
-
 . "$HOME/.homesick/repos/homeshick/homeshick.fish"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick.fish"
 
@@ -73,3 +71,10 @@ function st #[s]tart [t]ask
 end
 
 alias stop="task +ACTIVE stop; timew stop"
+
+# config.fish
+if not pgrep --full ssh-agent | string collect > /dev/null
+  eval (ssh-agent -c)
+  set -Ux SSH_AGENT_PID $SSH_AGENT_PID
+  set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
+end
