@@ -6,6 +6,7 @@ if [ -z "${1}" -o "${1}" = "-h" -o "${1}" = "--help" -o "${1}" = "-help" -o "${1
 fi
 
 while true; do
+	clear
 	${*}
 	sleep 15
 done
