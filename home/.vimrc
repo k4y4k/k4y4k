@@ -213,12 +213,12 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 noremap <silent> <c-_> :let @/ = ""<CR>
 
 " Set up my existing Zetty Betty (Zettlekasten 😂)
-let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/TheWritingRoom',
+let g:vimwiki_list = [{'path': '~/MEGAsync/Projects/flintt/TheWritingRoom',
       \ 'syntax': 'markdown',
       \ 'ext': '.md',
       \ 'index': 'Scratchpad'
       \ },
-      \ {'path': "~/MEGA/zet/",
+      \ {'path': "~/MEGAsync/zet/",
       \ 'syntax':'markdown',
       \ 'ext':'.md',
       \ 'index': '_inbox'}]
@@ -227,7 +227,7 @@ let g:vimwiki_list = [{'path': '~/MEGA/Projects/flintt/TheWritingRoom',
 let g:vimwiki_global_ext = 0
 
 " Search in the Zettlekastens
-let g:nv_search_paths = ['~/MEGA/Projects/flintt/TheWritingRoom', '~/MEGA/zet']
+let g:nv_search_paths = ['~/MEGAsync/Projects/flintt/TheWritingRoom', '~/MEGAsync/zet']
 
 " New Zettles are filenamed like 202011141509 (extension defined in
 " g:vimwiki_list above)
