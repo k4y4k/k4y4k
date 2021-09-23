@@ -20,7 +20,8 @@ set PATH ~/.cargo/bin $GOPATH/bin $PATH
 # fix ruby
 set PATH $PATH (ruby -e 'puts Gem.user_dir')/bin
 
-alias yi="yay -Syu --rebuild --noconfirm --sudoloop visual-studio-code-insiders-bin"
+alias yi="yay -Syu --combinedupgrade --noconfirm --sudoloop && yay -S --noconfirm --rebuild visual-studio-code-insiders-bin"
+alias yr="yay -Rs --noconfirm --sudoloop"
 alias work-here="subl . && smerge ."
 alias lss="exa -a --grid --long"
 alias zz="dunstctl close-all"
