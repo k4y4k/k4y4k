@@ -20,3 +20,6 @@ jobs:
           SHOW_LOC_CHART: "False"
           SHOW_SHORT_INFO: "False"
           IGNORED_REPOS: ${{ secrets.IGNORED_REPOS }}
+          SHOW_LANGUAGE_PER_REPO: "False"
+          SHOW_COMMIT: "False"
+          SHOW_DAYS_OF_WEEK: "False"
