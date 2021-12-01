@@ -21,19 +21,19 @@ Here's some things about me:
 ⌚︎ Time Zone: Australia/Brisbane
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+dosini                   0 secs              █████████████████████████   100.0%
 
 🔥 Editors: 
-No Activity Tracked This Week
+Neovim                   0 secs              █████████████████████████   100.0%
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+Unknown Project          0 secs              █████████████████████████   100.0%
 
 💻 Operating System: 
-No Activity Tracked This Week
+Linux                    0 secs              █████████████████████████   100.0%
 
 ```
 
 
- Last Updated on 30/11/2021
+ Last Updated on 01/12/2021
 <!--END_SECTION:waka-->
